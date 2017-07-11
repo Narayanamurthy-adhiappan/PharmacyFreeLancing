@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Medical Pharmacy</title>
+		<link rel = "stylesheet" type = "text/css" href = "main.css"/>
+			<!-- Compiled and minified CSS -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- Compiled and minified JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src = "app.js"></script>
+	</head>
+	<body>
+			<div class = "wrapper"></div>
+			<div class = "spaceWrap"></div>
+			<div class = "insideWrapper">
+				<div class = "row">
+					<div class = "col s6 m6 l6 align-left">
+						<div class = "logoContainer">
+							<i class="medium material-icons" style="color: #00A69C">queue</i>
+							<span class = "logo">Pharmacy</span>
+						</div>
+					</div>
+					<div class = "col s2 m4 l4"></div>
+					<div class = "col s4 m2 l2">
+						<div class = "logout align-right hoverable">Logout</div>
+					</div>
+
+				</div>
+				<div class = "row">
+					<div class = "col s2 m2 l2"></div>
+					<div class = "col s8 m8 l8">
+						<div class = "quotes">"A pharmacy your family can trust."</div>
+					</div>
+					<div class = "col s2 m2 l2"></div>
+				</div>
+				<div class = "row">
+					<div class = "col s1 m1 l1"></div>
+					<div class = "col s10 m10 l10 divideSection"></div>
+					<div class = "col s1 m1 l1"></div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s12 m12 l12">
+						<div class = "toolHeader">My Tools</div>
+					</div>
+				</div>
+
+				<div class = "row">
+						<div class = "col s12 m2 l2">
+						</div>
+						<div class = "col s12 m4 l4">
+							<div class = "sellDrug">
+								<i class="fa fa-cart-plus" style="font-size:48px;color:#34B475"></i>
+
+								<a href = "#drugSection" class = "sellDrugButton hoverable">Sell Drug</a>
+							</div>
+						</div>
+						<div class = "col s12 m4 l4">
+							<div class = "checkStock">
+								<i class="fa fa-medkit" style="font-size:48px;color:#34B475"></i>
+
+								<a href = "#" class = "checkStockButton hoverable">Check Stock</a>
+							</div>
+						</div>
+						<div class = "col s12 m2 l2"></div>
+				</div>
+
+
+				<div class = "row">
+						<div class = "col s12 m2 l2">
+						</div>
+						<div class = "col s12 m4 l4">
+							<div class = "checkExpiry">
+								<i class="fa fa-trash" style="font-size:48px;color:#34B475"></i>
+
+								<a href = "#" class = "checkExpiryButton hoverable">Check Expiry</a>
+							</div>
+						</div>
+						<div class = "col s12 m4 l4">
+							<div class = "myEarnings">
+								<i class="fa fa-dollar" style="font-size:48px;color:#34B475"></i>
+
+								<a href = "#" class = "myEarningsButton hoverable">My Earnings</a>
+							</div>
+						</div>
+						<div class = "col s12 m2 l2"></div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s1 m1 l1"></div>
+					<div class = "col s10 m10 l10 divideSection"></div>
+					<div class = "col s1 m1 l1"></div>
+				</div>
+
+
+				<div class = "row">
+					<div class = "col s12 m12 l12">
+
+						<div id = "drugSection" class = "toolHeader">Sell Drug</div>
+					</div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s12 m12 l12 drugName">Enter the Drug Information and Add to the Cart</div>
+				</div>
+
+				<div class = "row">
+						<div class = "s12 m12 l12">
+							<div class = "row">
+								<div class = "col m4 l4"></div>
+								<div class="col s5 m4 l4">
+						        <div class="input-field">
+						          <input type="text" id="autocomplete" class="autocomplete">
+						          <label for="autocomplete">Drug Name</label>
+						        </div>
+						    </div>
+								<div class = "col s5 m4 l4">
+									<a class="btn btn-floating pulse" id = "addToCart"><i class="material-icons">add</i></a>
+									<p id = "dataRequired"></p>
+
+								</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col s12 m12 l12 align-center">
+							<p id = "dataRequired"></p>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col s12 m12 l12 drugName">My Cart Details</div>
+				</div>
+				<div class = "row">
+					<div class = "col s12 m12 l12">
+						<table class = "centered oddRowHighlight">
+							<thead>
+							  <tr>
+									<th></th>
+								  <th>Drug Name</th>
+								  <th>Item Price</th>
+								  <th>Quantity</th>
+									<th>Increase Qty</th>
+							  </tr>
+							</thead>
+							<tbody id = "drugBill">
+
+							</tbody>
+						  </table>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col s12 m12 l12 center-align">
+						<div class = "tableData">No data in the Table</div>
+					</div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s12 m4 l4"></div>
+					<div class = "col s12 m4 l4 align-center">
+						<div class = "myEarnings">
+							<a href = "#" class = "myEarningsButton hoverable">Generate Bill</a>
+						</div>
+					</div>
+					<div class = "col s12 m4 l4"></div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s1 m1 l1"></div>
+					<div class = "col s10 m10 l10 divideSection"></div>
+					<div class = "col s1 m1 l1"></div>
+				</div>
+			</div>
+
+
+	</body>
+
+</html>

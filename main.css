@@ -1,0 +1,152 @@
+.wrapper{
+	background: linear-gradient(to right, #34B475, #00A69C);
+	background: -webkit-linear-gradient(to right, #34B475, #00A69C);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+.spaceWrap{
+	background: linear-gradient(to right, #34B475, #00A69C);
+	background: -webkit-linear-gradient(to right, #34B475, #00A69C);
+	width: 100%;
+	height: 20px;
+}
+.insideWrapper{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	background: white;
+	border-radius: 20px;
+}
+.logo{
+	color: #34B475;
+	font-size: 32px;
+	font-weight: 200%;
+	font-style: italic;
+}
+.logoContainer{
+	display: inline-block;
+}
+.logout{
+	background: linear-gradient(to right, #34B475, #00A69C);
+	background: -webkit-linear-gradient(to right, #34B475, #00A69C);
+	color: white;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-right: 0px;
+	text-align: center;
+}
+.quotes{
+	font-family: cursive;
+	font-size: 32px;
+  background: -webkit-linear-gradient(#34B475, #00A69C);
+	background: linear-gradient(#34B475, #00A69C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-align: center;
+}
+.divideSection{
+	border-bottom: thick solid #34B475;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.toolHeader{
+	text-align: center;
+	color: #00A69C;
+	text-decoration: underline;
+	font-size: 24px;
+	font-family: cursive;
+	font-weight: bold;
+	text-shadow: 10px;
+}
+.sellDrug{
+	text-align: center;
+	margin-top: 20px;
+}
+.sellDrugButton{
+	color: white;
+	background: -webkit-linear-gradient(#34B475, #00A69C);
+	background: linear-gradient(#34B475, #00A69C);
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 18px;
+	border: 2px solid white;
+}
+
+.checkStock{
+	text-align: center;
+	margin-top: 20px;
+}
+.checkStockButton{
+	color: white;
+	background: -webkit-linear-gradient(#34B475, #00A69C);
+	background: linear-gradient(#34B475, #00A69C);
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 18px;
+	border: 2px solid white;
+}
+.checkExpiry{
+	text-align: center;
+	margin-top: 20px;
+}
+.myEarnings{
+	text-align: center;
+	margin-top: 20px;
+}
+.checkExpiryButton{
+	color: white;
+	background: -webkit-linear-gradient(#34B475, #00A69C);
+	background: linear-gradient(#34B475, #00A69C);
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 18px;
+	border: 2px solid white;
+}
+.myEarningsButton{
+	color: white;
+	background: -webkit-linear-gradient(#34B475, #00A69C);
+	background: linear-gradient(#34B475, #00A69C);
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 18px;
+	border: 2px solid white;
+}
+.drugName{
+	font-size: 24px;
+	font-weight: bold;
+	color: #34B475;
+	text-align: center;
+}
+tr:nth-child(odd){
+	background: #76d6a6;
+}
+th{
+	background: #34B475;
+	color: white;
+}
+table{
+	margin-bottom: 25px;
+}
+.tableData{
+	font-size: 18px;
+	color: #34B475;
+	font-weight: bold;
+}
